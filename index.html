@@ -29,17 +29,17 @@
 	<div class="flex-contrainer">
     	<section id="products" class="container">
         	<h2>Our Products</h2>
-        	<div class="service">
+        	<div class="products">
 				<img src="Picture 1.png" alt="susu" width="300" height="160" style="border-radius: 15px;">
             	<h3>Bottle of milk</h3>
 	            <p>a milk bottle that is carefully produced and taken directly from the source.</p>
         	</div>
-        	<div class="service">
+        	<div class="products">
                 <img src="Picture 2.png" alt="susu almond" width="300" height="160" style="border-radius: 15px;">
             	<h3>Almond and oat milk</h3>
 	            <p>Almond and oat milk are processed with precision and available in a variety of original flavors and fruit flavours.</p>
         	</div>
-        	<div class="service">
+        	<div class="products">
                 <img src="yogurt.jpeg" alt="Yogurt" width="300" height="160" style="border-radius: 15px;">
             	<h3>Yogurt</h3>
             	<p>Delicious yogurt that has been tested in our lab.</p>
@@ -111,10 +111,23 @@
   .p {
       line-height: 1.6;
 }
-
-  .service, .team-member {
-      margin: 20px 0;
+	
+  products {
+      display: flex;
+      flex-direction: row; /* Agar item berjejer ke samping */
+      justify-content: space-between; /* Memberi jarak antara produk */
+      align-items: flex-start; /* Menjajarkan item ke bagian atas */
+      flex: 1;
+      margin: 0 10px; /* Menambah jarak antar produk */
+      text-align: center;
 }
+
+  #products img {
+      max-width: 100%;
+      height: auto; /* Menjaga agar gambar berskala dengan baik */
+      border-radius: 15px;
+}
+
 
   .footer {
       background-color: #333;
